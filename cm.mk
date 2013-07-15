@@ -16,7 +16,7 @@
 $(call inherit-product, $(LOCAL_PATH)/u8185.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+$(call inherit-product, $(LOCAL_PATH)/overlay/vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Setup device configuration
@@ -26,7 +26,6 @@ PRODUCT_DEVICE := u8185
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := U8185
 PRODUCT_MANUFACTURER := Huawei
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=google/soju/crespo:4.0.4/IMM76D/299849:user/release-keys PRIVATE_BUILD_DESC="soju-user 4.0.4 IMM76D 299849 release-keys"
 
 # Release name and versioning
 PRODUCT_VERSION_DEVICE_SPECIFIC :=

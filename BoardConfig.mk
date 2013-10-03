@@ -15,7 +15,7 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/huawei/u8185/include
 
-# CPU (msm7225a)
+# CPU (msm7227a)
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM := msm7x27a
 TARGET_CPU_ABI := armeabi-v7a
@@ -44,6 +44,8 @@ TARGET_NO_RECOVERY := false
 BOARD_LDPI_RECOVERY := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/u8185/recovery/recovery_keys.c
 BOARD_USE_CUSTOM_RECOVERY_FONT := '"font_7x16.h"'
+TARGET_RECOVERY_PIXEL_FORMAT: = "RGB_565"
+
 # force a "go back" menu item
 BOARD_HAS_NO_SELECT_BUTTON := true
 
